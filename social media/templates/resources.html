@@ -1,0 +1,20 @@
+{% extends "login_home.html" %}
+    {% block title %}
+        <title>Resources</title>
+    {% endblock %}
+
+    {% block content %}
+    {% for i in range((pn-1)*10,pn*10)%}
+    </form>
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Resource Link</label>
+        <input type="link" class="form-control" id="exampleFormControlInput1" placeholder="Post the link here" name='link'>
+    </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Description</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name='text'></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+        <h1>{{page_num}}</h1>
+     {% endblock %}                             
